@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration status="INFO">
+  <Appenders>
+    <console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%blue{%d{HH:mm:ss.SSS}} [%t] %highlight{%-5level} %magenta{%c{1.}} - %msg%n"/>
+    </console>
+  </Appenders>
+  <Loggers>
+
+    <Logger name="com.artyom" level="DEBUG" />
+
+    <Root level="INFO">
+      <AppenderRef ref="Console"/>
+    </Root>
+  </Loggers>
+</configuration>
