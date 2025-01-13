@@ -23,6 +23,7 @@ repositories {
 
 val vertxVersion = "4.5.11"
 val junitJupiterVersion = "5.9.1"
+val jacksonVersion = "2.18.1"
 
 val mainVerticleName = "com.artyom.vertex_starter.MainVerticle"
 val launcherClassName = "io.vertx.core.Launcher"
@@ -41,6 +42,9 @@ dependencies {
   implementation("org.slf4j:slf4j-api:1.7.30")
   implementation(platform("io.vertx:vertx-stack-depchain:$vertxVersion"))
   implementation("io.vertx:vertx-core")
+  // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+  implementation("com.fasterxml.jackson.core:jackson-databind:$jacksonVersion")
+
   testImplementation("io.vertx:vertx-junit5")
   testImplementation("org.junit.jupiter:junit-jupiter:$junitJupiterVersion")
 }
